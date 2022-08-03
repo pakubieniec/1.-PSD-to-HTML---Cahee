@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: red;
+  --secondary-color: green;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/bannerSM.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+}
