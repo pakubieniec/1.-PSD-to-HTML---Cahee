@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: red;
-  --secondary-color: green;
-}
-
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
@@ -56,8 +51,7 @@ a {
 }
 
 .menu {
-  display: none;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -66,7 +60,11 @@ a {
   width: 100vw;
   height: 80vh;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 222;
+  z-index: 2;
+}
+
+.menu.off {
+  display: none;
 }
 
 .menu__list {
@@ -96,11 +94,13 @@ a {
 }
 
 .fa-solid {
-  display: none;
+  position: relative;
+  display: block;
+  z-index: 3;
 }
 
-.fa-solid.active {
-  display: block;
+.fa-solid.off {
+  display: none;
 }
 
 .banner {
