@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,9 +22,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header-content container">
         <div class="logo">
           <h1 class="logo__name">Cahee</h1>
+        </div>
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars active"></i>
+          <i class="fa-solid fa-xmark"></i>
         </div>
         <nav class="menu">
           <ul class="menu__list">
@@ -46,16 +50,18 @@
             </li>
           </ul>
         </nav>
-        <div class="header__description">
-          <h2 class="header__title">Fresh Life</h2>
-          <p class="header__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            debitis aut molestiae quo, excepturi vero dolorum doloribus
-            voluptates explicabo dignissimos?
-          </p>
-          <button class="btn btn--header">Get free now</button>
-        </div>
       </div>
     </header>
+    <section class="banner">
+      <div class="banner__description container">
+        <h2 class="banner__title">Fresh Life</h2>
+        <p class="banner__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          debitis aut molestiae quo, excepturi vero dolorum doloribus voluptates
+          explicabo dignissimos?
+        </p>
+        <button class="btn btn--banner">Get free now</button>
+      </div>
+    </section>
   </body>
 </html>

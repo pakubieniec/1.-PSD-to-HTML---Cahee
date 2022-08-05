@@ -12,6 +12,7 @@
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
+  line-height: 1.7rem;
 }
 
 ul {
@@ -28,13 +29,126 @@ a {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 14vh;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.mobile-menu {
+  font-size: 2.8rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 222;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.menu__item {
+  /* height: 1.5rem; */
+}
+
+.menu__link {
+  padding-top: 0.3rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #262626;
+  transition: 0.1s linear;
+}
+
+.menu__link:hover {
+  border-top: 3px solid #ff6033;
+}
+
+.fa-solid {
+  display: none;
+}
+
+.fa-solid.active {
+  display: block;
+}
+
+.banner {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: url(img/bannerSM.jpg);
   background-position: center;
   background-size: cover;
+  z-index: 0;
 }
 
-.logo {
-  font-family: "Pacifico", cursive;
+.banner__description {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  width: 60vw;
+  color: #262626;
+}
+
+.banner__title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.banner__text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  width: 14rem;
+  height: 4rem;
+  border: 1px solid transparent;
+  box-shadow: 3px 4px 9px rgba(77, 77, 77, 0.38);
+  background-color: #ff6033;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  color: #ff6033;
+  background-color: #fff;
+  border: 1px solid #ff6033;
 }
